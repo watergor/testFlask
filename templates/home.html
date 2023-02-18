@@ -7,11 +7,15 @@
     </style>
   </head>
   <body>
-    <h1>Ігор Живчин</h1>
+    <h1>{{my_name}}</h1>
     <img src = "https://testFlask.ihorzhyvchyn.repl.co/static/banner.jpg" height = "320">
     <h2>Невеличкий опис сайту.</h2>
     <p>Привіт всім це домашня сторрінка сайту!</p>
     <h2>Відкриті позиції</h2>
+    <p>{%for job in jobs%}
+      <div>{{job['title']}}</div>
+      {%endfor%}
+      </p>
     <p>Туду ліст</p>
     <button>Чмак</button>
   </body>
